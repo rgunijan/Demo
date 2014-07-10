@@ -1,0 +1,51 @@
+1> to find terminal search terminal in left top search option.
+$ sudo apt-get install git
+$ sudo apt-get install synaptic
+$ sudo apt-get install gitg
+
+
+2> $ git init
+initialized empty Git repository in /home/rgunijan/.git/
+
+
+3> $ git clone git://github.com/rgunijan/Demo.git
+cloning into Demo
+or https://github.com/rgunijan/Demo.git
+
+4> Check for .gitignore file by opening FileExplorer and making invisible 
+files visible by "Ctrl+H"
+
+$ git status
+
+Will show all unwanted untracked files/ folders
+Add them to ignore list.
+http://www.vogella.com/tutorials/Git/article.html
+
+5>Vim
+
+In vim there are 3 different modes:
+
+Insert - allows typing and editing as normal
+Visual - used for selecting copy/paste etc.
+Normal - used for commands
+To get back to Normal mode, you can always press esc.
+
+Once you are at Normal mode Press : to begin your command (you'll see it appear in the bottom left). The following commands are related to quiting vim:
+
+:q - quit if no changes were made
+:q! - quit and destroy any changes made
+:wq - write changes (save) and quit
+:x - similar to :wq, only write the file if changes were made, then quit
+
+
+6> $ git config --global user.email "rgunijan@gmail.com"
+   $ git config --global user.name "rgunijan"
+
+
+7> $ git add Notes.txt (go to Demo folder first by cd Demo)
+
+8> $ git commit -m "Commit comment"
+
+9> $ git push  (this will work only if git clone is done from https)
+
+Check on github.com/rgunijan/Demo
