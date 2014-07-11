@@ -60,3 +60,23 @@ The --hard option changes all the files in your working tree to match
 the files in origin/master, so if you have any local changes, 
 they will be lost. With or without --hard, any local commits 
 that haven't been pushed will be lost.
+
+   
+11> $ git clean -f
+    $ git pull
+
+To delete all untracked files and then continue with usual git pull.
+If the Git configuration variable clean.requireForce is not set to false, 
+git clean will refuse to run unless given -f, -n or -i.
+ 
+
+12> $ git branch
+    For local branches
+    * master
+
+    $ git branch -r
+    Remote-tracking branches
+    origin/HEAD -> origin/master
+    origin/master
+
+13> Don’t use git pull, use git fetch and then git merge.
