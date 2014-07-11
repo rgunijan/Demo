@@ -71,7 +71,7 @@ git clean will refuse to run unless given -f, -n or -i.
  
 
 12> $ git branch
-    For local branches
+    For local branchesgit 
     * master
 
     $ git branch -r
@@ -79,4 +79,51 @@ git clean will refuse to run unless given -f, -n or -i.
     origin/HEAD -> origin/master
     origin/master
 
-13> Don’t use git pull, use git fetch and then git merge.
+13> Don’t use git pull, use git fetch and then git merge.g
+
+14> $ git remote -v
+    origin https://github.com/rgunijan/Demo2.git (fetch)
+    origin https://github.com/rgunijan/Demo2.git (push)
+
+15> $ git remote add origin https://github.com/rgunijan/Demo2.git
+
+Create a new repository on the command line
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rgunijan/Demo2.git
+git push -u origin master
+
+Push an existing repository from the command line
+
+git remote add origin https://github.com/rgunijan/Demo2.git
+git push -u origin master
+
+
+16> $ git commit -a -m "Comment"
+-a allows to commit without stagin a file using add, does staging plus commit
+
+17> $ git commit --amend
+--amend allows file to be added in previous commit operation.
+
+18> $ git reset HEAD readme.txt
+
+removes accidentally committed file.
+File will be modified but unstaged. 
+
+
+19> $ git checkout -- readme.txt
+Discards the changes made.
+
+20> Working wth Remotes
+
+$ git clone https://github.com/rgunijan/Demo.git
+$ cd Demo
+$ git remote
+$ git remote -v
+$ git remote add origin https://github.com/rgunijan/Demo.git
+$ git fetch origin
+$ git push origin master
+$ git remote show origin
