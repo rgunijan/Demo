@@ -6,3 +6,4 @@ Ubuntu change.
 Gitg changes.
 Another update from Windows
 Ubuntu
+editing through emacs.
